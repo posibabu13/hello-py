@@ -59,20 +59,6 @@ uv run task.py
 ```
 This invokes an agent loop requiring tool calls to build the function (using a persistent Python namespace) and then submit completion.
 
-## Anthropic API Key Persistence
-Set once per shell session:
-```bash
-export ANTHROPIC_API_KEY=your_api_key_here
-```
-For permanence add to `~/.zshrc`:
-```bash
-echo 'export ANTHROPIC_API_KEY=your_api_key_here' >> ~/.zshrc
-source ~/.zshrc
-```
-Verify:
-```bash
-echo $ANTHROPIC_API_KEY
-```
 
 ## Troubleshooting
 - If `Import "anthropic" could not be resolved`: ensure dependency installed (see `pyproject.toml`).
